@@ -1,0 +1,49 @@
+{
+  "tractors": [
+    {
+      "id": 1,
+      "name": "Krazy Kubotas",
+      "image": "https://rare-gallery.com/thumbs/889863-Kubota-M5111-2016-Tractor-Red-White-background.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cajun Cases",
+      "image": "https://us.123rf.com/450wm/jirsak/jirsak1210/jirsak121000019/15554571-tractor-studio-shot-on-white-background.jpg?ver=6"
+    },
+    {
+      "id": 3,
+      "name": "Jumpin' John Deeres",
+      "image": "https://www.nicepng.com/png/detail/276-2768630_new-8310r-tractor-john-deere-tractors.png"
+    },
+    {
+      "id": 4,
+      "name": "Nefarious New Hollands",
+      "image": "http://assets.cnhindustrial.com/nhag/eu/en-uk/PublishingImages/news/2014/new-holland-celebrates-50-years-basildon-golden-jubilee-t7-t6-lamma-2014-01.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fearless Fendts",
+      "image": "https://rare-gallery.com/thumbs/875027-Fendt-942-Vario-White-background-Wheel-Tractor.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Maniacal Massey Fergusons",
+      "image": "https://s1.1zoom.me/big3/614/Massey_Ferguson_7180_Cab_2009_--_Tractor_Red_White_605080_4500x3000.jpg"
+    },
+    {
+      "name": "We Tried",
+      "image": "https://www.scsgearbox.com/wp-content/uploads/2015/09/Arend-van-Opstal-No-Limit.jpg",
+      "id": 7
+    },
+    {
+      "name": "Team Overkill",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Tractor_pull_02.JPG/640px-Tractor_pull_02.JPG",
+      "id": 8
+    },
+    {
+      "name": "New Guys On the Block",
+      "image": "https://i5.walmartimages.com/asr/49d4cd6a-dce0-4156-a0ed-8e7a97247d07_1.49bfe2b13fb02e09ea854411abdf49a1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "id": 9
+    }
+  ]
+}
