@@ -10,16 +10,20 @@ function NavigationBar() {
                 <h4>Home</h4>
             </NavLink>
             
-            <NavLink to="/tractors">
-                <h4>Registered Teams</h4>   
+            <NavLink to="vans">
+                <h4>Vans for Sale</h4>   
             </NavLink>
             
             <NavLink to="newregistration">
-                <h4>New Registration</h4>
+                <h4>New Listing</h4>
             </NavLink>
 
             <NavLink to="contactus">
                 <h4>Contact Us</h4>
+            </NavLink>
+
+            <NavLink to="login">
+                <h4>Account Login</h4>
             </NavLink>
             </div>
                

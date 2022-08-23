@@ -3,33 +3,34 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import {Route} from 'react-router-dom';
 
-import TractorList from "./TractorList";
-import NewTractorForm from "./NewTractorForm";
+import CarList from "./CarList";
+import NewCarForm from "./NewCarForm";
 import ContactUs from './ContactUs';
 import Home from './Home';
 import LandingPage from './LandingPage';
+import Login from './Login';
 
 
 
 
 function App() {
 
-  const [allTractors, setTractor] = useState([])
+  const [allCars, setCar] = useState([])
 
-  const fetchTractor = () => {
-    fetch("http://localhost:4001/tractors")
+  const fetchCar = () => {
+    fetch("http://localhost:4001/vans")
       .then(res => res.json())
-      .then(data => setTractor(data))
+      .then(data => setCar(data))
   }
 
-  useEffect(fetchTractor, [])
+  useEffect(fetchCar, [])
 
-  const goGetNewTractor = (tractorFromForm) => {
-    setTractor(  [ tractorFromForm , ...allTractors ]  )
-    fetch( "http://localhost:4001/tractors" , {
+  const goGetNewCar = (carFromForm) => {
+    setCar(  [ carFromForm , ...allCars ]  )
+    fetch( "http://localhost:4001/vans" , {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify( tractorFromForm )
+        body: JSON.stringify( carFromForm )
       } )
       .then( response => response.json() )
       .then( console.log )
@@ -46,18 +47,21 @@ function App() {
         <LandingPage/>
       </Route>
 
-      <Route path='/tractors'>
-        <TractorList tractorListToRender = {allTractors}/>
+      <Route path='/vans'>
+        <CarList CarListToRender = {allCars}/>
       </Route>
 
       <Route path='/newregistration'>
-        <NewTractorForm goGetNewTractor={goGetNewTractor}/>
+        <NewCarForm goGetNewCar={goGetNewCar}/>
       </Route>
 
       <Route path='/contactus'>
         <ContactUs/>
       </Route>
 
+      <Route path='/login'>
+        <Login/>
+      </Route>
      
     </div>
 
