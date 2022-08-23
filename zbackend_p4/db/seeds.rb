@@ -1,7 +1,55 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "🏕 Seeding buyers..."
+buyer1 = Buyer.create(name: 'Caitlin')
+buyer2 = Buyer.create(name: 'Lizzie')
+buyer3 = Buyer.create(name: 'Tom')
+buyer4 = Buyer.create(name: 'Morgan')
+buyer5 = Buyer.create(name: 'Danny')
+buyer6 = Buyer.create(name: 'Peter')
+buyer7 = Buyer.create(name: 'Amanda')
+buyer8 = Buyer.create(name: 'Nick')
+
+puts "🏕 Seeding owners..."
+owner1 = Owner.create(name: 'Archery', password: 2)
+owner2 = Owner.create(name: 'Swimming', password: 3)
+owner3 = Owner.create(name: 'Photography', password: 2)
+owner4 = Owner.create(name: 'Arts & Crafts', password: 5)
+owner5 = Owner.create(name: 'Kayaking', password: 3)
+owner6 = Owner.create(name: 'Fencing', password: 4)
+owner7 = Owner.create(name: 'Canoeing', password: 3)
+owner8 = Owner.create(name: 'Windsurfing', password: 5)
+
+puts "🏕 Seeding vans..."
+Van.create(buyer_id: buyer1.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer4.id, owner_id: owner8.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer5.id, owner_id: owner7.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer3.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer4.id, owner_id: owner8.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer5.id, owner_id: owner7.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer3.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer4.id, owner_id: owner8.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer5.id, owner_id: owner7.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer3.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer1.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner2.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer2.id, owner_id: owner1.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer4.id, owner_id: owner8.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer5.id, owner_id: owner7.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+Van.create(buyer_id: buyer3.id, owner_id: owner4.id, year: 2018, make: "GMC", model: "Savana", price: 28999, imageURL: "https://lowgravityascents.com/wp-content/uploads/2014/09/Van.jpg")
+
+puts "✅ Done seeding!"
