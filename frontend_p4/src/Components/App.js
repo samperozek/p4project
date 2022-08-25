@@ -18,16 +18,18 @@ function App() {
   const [allCars, setCar] = useState([])
 
   const fetchCar = () => {
-    fetch("http://localhost:4001/vans")
+    fetch("http://localhost:4003/vans")
       .then(res => res.json())
       .then(data => setCar(data))
   }
+
+  console.log(allCars)
 
   useEffect(fetchCar, [])
 
   const goGetNewCar = (carFromForm) => {
     setCar(  [ carFromForm , ...allCars ]  )
-    fetch( "http://localhost:4001/vans" , {
+    fetch( "http://localhost:4003/vans" , {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify( carFromForm )
@@ -48,7 +50,7 @@ function App() {
       </Route>
 
       <Route path='/vans'>
-        <CarList CarListToRender = {allCars}/>
+        <CarList carListToRender = {allCars}/>
       </Route>
 
       <Route path='/newregistration'>

@@ -12,7 +12,7 @@ function CarList({carListToRender}) {
           return(
             <CarCard
               key ={eachCar.id}
-              tractorToRender={eachCar}
+              carToRender={eachCar}
             /> )}
         )
       }
